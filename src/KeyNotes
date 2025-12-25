@@ -1,0 +1,14 @@
+Code,        Status,                                           Why?
+"new HashMap<String, Integer>()",   Valid (Old),Redundant.    You repeat yourself.
+new HashMap<>(),  Valid (Best),                               Uses Type Inference. Clean and safe.
+new HashMap(),    Valid (Bad),                                Raw Type. loses type safety guarantees.
+
+---------------------------------------------------------------------------------------------
+
+Syntax,              Meaning
+<>,"The Labels:"    "Make sure this box only holds Strings and Integers."""
+(),"The Action:"    "Build the box now using default settings."""
+(100),"The Action:" "Build the box now, but make it big enough for 100 items."""
+
+---------------------------------------------------------------------------------------------
+
